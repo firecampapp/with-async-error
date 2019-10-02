@@ -8,15 +8,13 @@ const withAsync = (asyncFn)=> {
       return Promise.resolve([null, new Error("not a promise"), {start: startTime, end: endTime, duration: endTime-startTime }])
    }
    return fn
-   .then(data=> {
-      endTime = new Date().valueOf()
-      return [ data, null, {start: startTime, end: endTime, duration: endTime-startTime }]
-   })
-   .catch(err=> {
-      endTime = new Date().valueOf()
-      return [null, err, {start: startTime, end: endTime, duration: endTime-startTime }]
-   })
+      .then(data=> {
+         endTime = new Date().valueOf()
+         return [ data, null, {start: startTime, end: endTime, duration: endTime-startTime }]
+      })
+      .catch(err=> {
+         endTime = new Date().valueOf()
+         return [null, err, {start: startTime, end: endTime, duration: endTime-startTime }]
+      })
 }
-
-// export default withAsync;
 module.exports = withAsync
