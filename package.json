@@ -1,0 +1,30 @@
+{
+  "name": "with-async",
+  "version": "1.0.0",
+  "description": "Async without try...catch",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firecampapp/withAsync.git"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "try",
+    "catch",
+    "promise",
+    "then"
+  ],
+  "author": "Nishchit Dhanani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firecampapp/withAsync/issues"
+  },
+  "homepage": "https://github.com/firecampapp/withAsync#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
