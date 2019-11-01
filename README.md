@@ -6,8 +6,22 @@ async without try...catch
 npm i with-async-error --save or yarn add with-async-error
 ```
 
-![image](https://user-images.githubusercontent.com/5078921/68008950-85bc6d80-fca6-11e9-90cf-b3ff5a8bec25.png)
+### example
+```javascript
+import withAsync from "with-async-error";
 
+cost apiA = Promise.resolve("200OK")
+cost apiB = Promise.reject("error")
+
+let [ dataA, errA, timingA ] = await withAsync(apiA)
+let [ dataB, errB, timingB ] = await withAsync(apiB)
+
+conosle.log(dataA, errA, timingA)
+// 200OK, null, 125
+
+conosle.log(dataB, errB, timingB)
+// null, error, 15
+```
 
 ## todo
 
