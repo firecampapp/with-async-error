@@ -5,6 +5,6 @@ async without try...catch
 
 - [x] withAsync lib 
 - [ ] ES5 transform (babel, webpack)
-- [ ] Test cases
+- [x] Test cases
 - [ ] Documentation
 - [ ] npm publish
