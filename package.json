@@ -1,5 +1,5 @@
 {
-  "name": "with-async",
+  "name": "with-async-error",
   "version": "0.0.1",
   "description": "Async without try...catch",
   "main": "index.js",
