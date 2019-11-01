@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/firecampapp/withAsync.git"
+    "url": "git+https://github.com/firecampapp/with-async-error.git"
   },
   "keywords": [
     "async",
@@ -21,9 +21,9 @@
   "author": "Nishchit Dhanani",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/firecampapp/withAsync/issues"
+    "url": "https://github.com/firecampapp/with-async-error/issues"
   },
-  "homepage": "https://github.com/firecampapp/withAsync#readme",
+  "homepage": "https://github.com/firecampapp/with-async-error#readme",
   "devDependencies": {
     "jest": "^24.9.0",
     "release-it": "^12.4.3"
