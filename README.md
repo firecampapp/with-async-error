@@ -1,5 +1,5 @@
 # with-async-error
-async without try...catch
+async without try...catch [Live demo](https://runkit.com/nishchit14/5dbbe1ba3885ba00148b71d1)
 
 ### install
 ```
@@ -10,17 +10,17 @@ npm i with-async-error --save or yarn add with-async-error
 ```javascript
 import withAsync from "with-async-error";
 
-cost apiA = Promise.resolve("200OK")
-cost apiB = Promise.reject("error")
+const apiA = ()=> Promise.resolve("200OK")
+const apiB = ()=> Promise.reject("error")
 
 let [ dataA, errA, timingA ] = await withAsync(apiA)
 let [ dataB, errB, timingB ] = await withAsync(apiB)
 
-conosle.log(dataA, errA, timingA)
-// 200OK, null, 125
+console.log(dataA, errA, timingA)
+// 200OK, null, { duration:1, start: timestamp, end: timestamp}
 
-conosle.log(dataB, errB, timingB)
-// null, error, 15
+console.log(dataB, errB, timingB)
+// null, error, { duration:1, start: timestamp, end: timestamp}
 ```
 
 ## todo
