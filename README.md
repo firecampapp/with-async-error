@@ -10,4 +10,4 @@ async without try...catch
 - [ ] ES5 transform (babel, webpack)
 - [x] Test cases
 - [ ] Documentation
-- [ ] npm publish
+- [x] npm publish
